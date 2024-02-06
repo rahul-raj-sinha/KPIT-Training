@@ -1,0 +1,20 @@
+1. PyQt5
+2. Tkinter
+3. Kivy
+4. wxPython
+5. Libavg
+6. PySimpleGUI
+7. PyForms
+8. Wax
+9. PySide2
+10. PyGUI
+
+
+https://www.pythontutorial.net/tkinter/
+
+https://www.geeksforgeeks.org/python-simple-gui-calculator-using-tkinter/
+
+https://likegeeks.com/python-gui-examples-tkinter-tutorial/
+
+https://www.kaggle.com/code/robikscube/working-with-audio-in-python
+
