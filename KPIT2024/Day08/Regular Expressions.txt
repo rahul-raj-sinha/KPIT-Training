@@ -1,0 +1,58 @@
+Regular Expressions
+--------------------
+
+.	-	Single character
+
+^	-	Begning of the string 
+
+$	-	End of the string
+
+*	-	zero or more occurances
+
+?	-	zero or one occurance
+
++	-	one or more occurances
+
+{n}	-	exactly n times
+
+{n,}	-	min n and max infinite times
+
+{n,m}	-	min n and max m times
+
+[ ]	-	character class
+
+( )	-	grouping
+
+|	-	alternation (or operator)
+
+\	-	supress the meaning of the regex characters
+
+?  	-	greedy search	
+
+
+---------------------------------------------------------------------------------------------
+
+\w 	-	word		- alphanumeric characters
+
+\W	-	non word	- special character
+
+\d	-	digits		- Numbers
+
+\D	-	non numeric	- everything other than numbers
+
+\s	-	space		- space
+
+\S	- 	non space	- everything other than spaces
+
+\b	-	word boundary	
+
+\B	- 	non word boundary
+
+\A	-	Begning of the string
+
+\Z	- 	End of the string
+
+
+
+
+

@@ -1,0 +1,71 @@
+write a code to accept data and write into the file until the user wishes to add new lines into the file
+
+1. add it directly as a string
+
+2. append all the lines into a list and then write it into the file (reverse order - last line first and first line last)
+
+
+Seek
+-----
+seek(250, 2)
+
+seek(0, 2)
+
+seek(-200, 2)
+
+seek(50, 1)
+
+seek(-50, 0)
+
+csv files
+---------
+
+['empid', 'empname', 'age', 'dept', 'salary']
+['501', 'Jack', '28', 'HR', '65000']
+['235', 'Jill', '34', 'FIN', '35000']
+['150', 'John', '26', 'AC', '25000']
+['325', 'Jai', '21', 'DEV', '55000']
+['450', 'Guru', '38', 'DEV', '85000']
+['182', 'Sita', '32', 'PRC', '75000']
+['297', 'Gita', '36', 'SUP', '60000']
+
+
+
+
+
+
+
+
+
+Assignment
+----------
+1. write a code to accept data and write into the file until the user wishes to add new lines into the file
+ 	a. store it in a dictionary and then write all lines into the file
+
+2. Accept ten lines from the user and store it in a list and then write the lines into the file randomly (unique data)
+
+
+3.open the CSV file (Emp.csv) and list out the following
+
+https://github.com/colkiran/KPIT2024
+
+dictionary to be implemented to get the count of Males and Females
+
+lists
+-----
+1. get the unique names of 
+	a. dept
+	b. desig
+
+sum of all salaries
+
+Enter the 0th string :first element
+Enter the 1th string :second element
+Enter the 2th string :third element
+Enter the 3th string :fourth element
+Enter the 4th string :fifth elememt
+Enter the 5th string :sixth element
+Enter the 6th string :seventh element
+Enter the 7th string :eight element
+Enter the 8th string :ninth element
+Enter the 9th string :tenth element
