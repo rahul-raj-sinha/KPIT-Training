@@ -1,0 +1,21 @@
+Dictionary
+-----------
+
+1. unorder collection
+
+2. keys are always unique
+
+3. they are mutable
+
+4. dictionaries are enclosed in {k1:v1, k2:v2, k3:v3}
+
+'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+
+Tuples
+------
+its an immutable list
+
+tuples are enclose in ( )
+
+
