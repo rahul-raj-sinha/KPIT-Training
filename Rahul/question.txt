@@ -1,0 +1,372 @@
+# calculate the memory allocation of the function  
+
+import tracemalloc
+def memory_usage(fun):
+    def wrapper(*args , ** kwargs):
+        tracemalloc.start()
+        res = fun(*args , **kwargs)
+        current_memory , peak_memory = tracemalloc.get_traced_memory()
+        print(f"the current memory allocation is : {current_memory}")
+        print(f"the peak memory allocation is : {peak_memory}")
+        tracemalloc.stop()
+        return res
+    return wrapper
+@memory_usage
+def my_function(value):
+    square = value**value
+    print(square)
+value = 3
+print(my_function(value))
+
+
+
+1. Create a class Students:
+python
+Copy code
+class Students:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+# Example usage:
+student1 = Students("John Doe", 18, "A")
+print(student1.name, student1.age, student1.grade)
+---------------------------------------------------------------------------------------------------------------
+2. Create a valid empty class Students:
+python
+Copy code
+class Students:
+    pass
+
+# This class has no properties or methods.
+---------------------------------------------------------------------------------------------------------------------------
+3. Create a child class Teacher inheriting from Staff:
+Python
+Copy code
+class Staff:
+    # Staff class properties and methods
+
+class Teacher(Staff):
+    # Teacher class inherits from Staff
+    # Additional properties and methods for Teacher
+-----------------------------------------------------------------------------------------------------------
+4. Print writable attributes of a class instance:
+python
+Copy code
+class ExampleClass:
+    def __init__(self):
+        self.read_only = 10
+        self.writable = 20
+
+instance = ExampleClass()
+
+# Print writable attributes
+for attr, value in instance.__dict__.items():
+    if not attr.startswith('_'):
+        print(attr)
+--------------------------------------------------------------------------------------------------
+5. Create a class Teacher with private salary attribute:
+python
+Copy code
+class Teacher:
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.__salary = salary  # Private attribute
+
+    def get_salary(self):
+        return self.__salary
+
+# Example usage:
+teacher = Teacher("Alice", 35, 50000)
+print(teacher.get_salary())
+# print(teacher.__salary)  # This would raise an error
+----------------------------------------------------------------------------------
+6. Overload + and > for a custom class:
+python
+Copy code
+class CustomClass:
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):
+        return self.value + other.value
+
+    def __gt__(self, other):
+        return self.value > other.value
+
+# Example usage:
+obj1 = CustomClass(5)
+obj2 = CustomClass(10)
+
+result_sum = obj1 + obj2
+print(result_sum)
+
+result_gt = obj2 > obj1
+print(result_gt)
+---------------------------------------------------------------------------------------------------------
+7. Check if one class is a subclass of another:
+python
+Copy code
+class ParentClass:
+    pass
+
+class ChildClass(ParentClass):
+    pass
+
+# Check if ChildClass is a subclass of ParentClass
+print(issubclass(ChildClass, ParentClass))
+----------------------------------------------------------------------------------------------------
+8. List default and custom properties of a class:
+python
+Copy code
+class ExampleClass:
+    default_property = "I am a default property"
+
+    def __init__(self):
+        self.custom_property = "I am a custom property"
+
+# List properties
+print(dir(ExampleClass))
+--------------------------------------------------------------------------------------------
+9. Implement a stack data structure using class and objects:
+python
+Copy code
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def traverse(self):
+        return self.items
+
+# Example usage:
+stack = Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+print(stack.traverse())
+stack.pop()
+print(stack.traverse())
+------------------------------------------------------------------------------------
+10. Print the class name using its object:
+python
+Copy code
+class ExampleClass:
+    pass
+
+obj = ExampleClass()
+print(obj.__class__.__name__)
+--------------------------------------------------------------------------------------------------
+11. Define methods for square area and perimeter:
+python
+Copy code
+class Square:
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side ** 2
+
+    def perimeter(self):
+        return 4 * self.side
+
+# Example usage:
+square = Square(5)
+print("Area:", square.area())
+print("Perimeter:", square.perimeter())
+
+#sort the mobile number
+
+def add_country_codes(func):
+#     def wrapper(numbers):
+#         country_codes = ["+91" + number[-10:] for number in numbers]
+#         return func(sorted(country_codes))
+#     return wrapper
+# @add_country_codes
+# def formatted_numbers(numbers):
+#     for number in numbers:
+#         formatted = f"{number[:3]} {number[3:8]} {number[8:]} "
+#         print(formatted)
+# #sample input
+# num_count = 3
+# phone_numbers = [
+#     "07895462130",
+#     "919875641230",
+#     "9195969878"]
+# print(formatted_numbers(phone_numbers))
+
+	  
+
+import time
+
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        print(f"Function '{func.__name__}' took {elapsed_time:.4f} seconds to execute.")
+        return result
+    return wrapper
+
+# Applying the decorator
+@timing_decorator
+def example_function():
+    # Some time-consuming operation
+    time.sleep(2)
+    print("Function executed.")
+
+# Calling the decorated function
+example_function()
+
+
+
+--------------------------------------------------------------
+4. create a python module that has a abstract class example
+   (student class and every student should study,  writeexams which are abstractmethods and attendclass is a normal method.
+
+from abc import ABC, abstractmethod
+
+class Student(ABC):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @abstractmethod
+    def study(self):
+        pass
+
+    @abstractmethod
+    def write_exams(self):
+        pass
+
+    def attend_class(self):
+        print(f"{self.name} is attending class.")
+
+# Create a concrete class that inherits from the abstract class
+class HighSchoolStudent(Student):
+    def study(self):
+        print(f"{self.name} is studying for high school exams.")
+
+    def write_exams(self):
+        print(f"{self.name} is writing high school exams.")
+
+# Create an instance of the concrete class
+high_school_student = HighSchoolStudent(name="John", age=16)
+
+# Accessing methods
+high_school_student.study()       # Output: John is studying for high school exams.
+high_school_student.write_exams() # Output: John is writing high school exams.
+high_school_student.attend_class() # Output: John is attending class.
+
+--------------------------------------------------------------------------------------------------------------------
+class Employee:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    
+    def __str__(self):
+        return (f"Name is {self.name} and Age is {self.age}")
+
+name = input("Enter Name: ")
+dob = input("Enter Date of Birth: ")
+
+curr = datetime.now().year
+dob = dob[-4:len(dob)]
+age = curr - int(dob)
+
+emp1 = Employee(name, age)
+-------------------------------------------------------------------------------------------------------------
+class ShoppingCart:
+    def __init__(self):
+        self.items = {}  # Dictionary to store items in the cart with their prices
+
+    def add_item(self, item, price, quantity=1):
+        if item in self.items:
+            # If item is already in the cart, update the quantity
+            self.items[item]['quantity'] += quantity
+        else:
+            # Otherwise, add the item to the cart with its price and quantity
+            self.items[item] = {'price': price, 'quantity': quantity}
+
+        print(f"Added {quantity} {item}(s) to the cart.")
+
+    def remove_item(self, item, quantity=1):
+        if item in self.items:
+            if quantity >= self.items[item]['quantity']:
+                # If the quantity to remove is greater or equal to the current quantity, remove the item
+                del self.items[item]
+            else:
+                # Otherwise, update the quantity
+                self.items[item]['quantity'] -= quantity
+            print(f"Removed {quantity} {item}(s) from the cart.")
+        else:
+            print(f"{item} not found in the cart.")
+
+    def calculate_total_price(self):
+        total_price = sum(item['price'] * item['quantity'] for item in self.items.values())
+        return total_price
+
+    def display_cart(self):
+        print("\nShopping Cart:")
+        for item, details in self.items.items():
+            print(f"{item}: ${details['price']} x {details['quantity']}")
+
+# Example usage:
+cart = ShoppingCart()
+
+cart.add_item("Laptop", 1200)
+cart.add_item("Headphones", 100, 2)
+cart.add_item("Mouse", 30)
+
+cart.display_cart()
+
+cart.remove_item("Headphones", 1)
+
+cart.display_cart()
+
+total_price = cart.calculate_total_price()
+print(f"\nTotal Price: ${total_price}")
+
+
+def standardizedMobileNumber(func):
+    def wrapper(numbers):
+        standardizedNumbers = []
+        for number in numbers:
+            if len(number) == 10:
+                standardizedNumbers.append('+91 ' + number[:5] + ' ' + number[5:])
+            elif len(number) == 11 and number[0] == '0':
+                standardizedNumbers.append('+91 ' + number[1:6] + ' ' + number[6:])
+            elif len(number) == 12 and number[:2] == '91':
+                standardizedNumbers.append('+91 ' + number[2:7] + ' ' + number[7:])
+            elif len(number) == 13 and number[:3] == '+91':
+                standardizedNumbers.append('+91 ' + number[3:8] + ' ' + number[8:])
+        standardizedNumbers.sort()
+        func(standardizedNumbers)
+    return wrapper
+
+
+@standardizedMobileNumber
+def printStandardizedNumbers(numbers):
+    for number in numbers:
+        print(number)
+
+n = int(input().strip())
+mobileNumbers = [input().strip() for _ in range(n)]
+
+printStandardizedNumbers(mobileNumbers)
+
+Gsibe 
+
+
