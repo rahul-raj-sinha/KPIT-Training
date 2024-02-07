@@ -1,0 +1,157 @@
+
+Import a python file as module
+
+1. .py file will get converted into .pyc file and stored in a folder __pycache__
+
+2. python will check for .pth file in your native directory (where python.exe is present)
+
+3. checks for the library path that is present in sys.path
+
+4. checks for the date and time of creation of .py vs .pyc files. Expects .pyc file to have the latest date or time of modification
+
+
+
+
+python -m filename
+
+create a file with extension .pth
+
+
+
+sounds
+    effects
+	dts.py
+	surround.py
+        echo.py
+    filters
+    formats
+
+
+Installable packages
+---------------------
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+Packaging Examples
+    src
+  	kpit_packages
+		__init__.py
+		kpit.py
+    tests
+    LICENSE
+    pyproject.toml
+    README.md
+
+TERMINAL
+---------
+python -m pip install --upgrade build
+
+python -m build
+
+dist
+  kpit.tar.gz
+  kpit.whl
+
+
+Venv
+  Lib
+    kpit_package
+	__init__.py
+	kpit.py
+
+
+Regular Expressions
+-------------------
+. 		-	 Single Character
+
+^		- 	 search at the begning of the string
+
+$		-	 Search at the end of the string
+
+*		- 	 zero or more occurance
+
+?		-	 zero or one occurance
+
++	 	- 	 one or more occurances
+
+{n}		- 	 exactly n times
+
+{n,}		-	 atleast n times
+
+{n, m}		- 	 min n times and max  m times
+
+[ ] 		- 	 character class
+
+( )		- 	 grouping
+
+|		- 	 Alternation (or operator)
+
+\		- 	 escape - supress the meaning of regex
+
+
+License Number
+---------------
+LCNO-KAR-05-2014-0005
+
+LCNO- no changes
+
+KAR - KER, APN, TND, TEL, MAH
+
+05 - RTO office number - 01 - 73 (no 00)
+
+2014 - 2000+
+
+0005 - 0001 - 9999 (no 0000)
+
+"LCNO-08-"
+
+res = re.search(r'LCNO-()-', st)
+
+-----------------------------------------------------------------------
+
+\w 		-	word	-	alpha numeric characters
+
+\W		-	non word -	special characters
+
+\d		-	digits	 - 	numbers
+
+\D		-  	non digit - 	non numeric
+
+\s		-	space	 - 	spaces
+
+\S		- 	non space -	everything other than space
+
+\b		-	word boundary
+
+\B		- 	non word boundary
+
+\A		-	begning of the string
+
+\Z		- 	end of the string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
