@@ -1,0 +1,100 @@
+Python DataStructures
+---------------------
+1. Lists 
+2. Dictionary
+3. Tuple
+4. Set
+
+
+
+Lists
+-----
+1. collection of hetrogenous data
+2. memory allocation is not cotigious
+3. ordered collection
+4. static
+5. subscritable
+6. lists are enclosed []
+
+List manipulation functions
+----------------------------
+'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
+
+
+add elements
+------------
+append, extend, insert
+
+
+append - can add only one element at a time and at the end of the list
+
+Remove elements from the list
+-----------------------------
+remove, pop
+
+use remove function and remove all 1l
+use pop function and remove all 2 in l1
+
+l1 = [1, 1, 1, 1, 1, 2, 3, 2, 2, 2, 2, 2, 2,    2, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 1, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1,1 , 1 ,1, 1 ,1, 1, 1]
+
+copy
+----
+
+
+https://pythontutor.com/visualize.html#mode=edit
+
+
+Sort
+----
+
+list.sort - original list will get sorted
+
+sorted(list) - copy of the list, sort it and return it
+
+
+Dictionary
+----------
+1. its an associative array
+2. its an ordered collection
+3. keys in a dictionary is always unique
+4. keys are user defined
+5. dictinaries are mutable
+6. dictioanaries are enclosed in {k1:v1, k2:v2, k3:v3....}
+
+
+function to manipulate a dictionary
+-----------------------------------
+'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+
+tuples
+------
+immutable lists
+tuples are enclosed in ()
+
+
+sets
+----
+1. elements of a set is unique
+2. not iterable
+3. undered collection
+4. not subsriptable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

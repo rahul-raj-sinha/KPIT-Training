@@ -1,0 +1,66 @@
+Private, Public and protected
+-----------------------------
+
+private variable = __pvtVar
+
+protected variable = _proVar
+
+public		  = publicVar
+
+
+File Handling
+--------------
+
+write a code to accept lines from the user until the user says 'no'    
+
+['empid', 'empname', 'age', 'dept', 'salary']
+['501', 'Jack', '28', 'HR', '65000']
+['235', 'Jill', '34', 'FIN', '35000']
+['150', 'John', '26', 'AC', '25000']
+['325', 'Jai', '21', 'DEV', '55000']
+['450', 'Guru', '38', 'DEV', '85000']
+['182', 'Sita', '32', 'PRC', '75000']
+['297', 'Gita', '36', 'SUP', '60000']
+
+Total 25 --> Remaining 6 --> Father Distributes 2 to each Daughters
+		Daughter#1-->9
+		Daughter#2-->6
+		Daughter#3-->4
+Total 106 --> Remaining 30 --> Father Distributes 10 to each Daughters
+		Daughter#1-->36
+		Daughter#2-->24
+		Daughter#3-->16
+Total 187 --> Remaining 54 --> Father Distributes 18 to each Daughters
+		Daughter#1-->63
+		Daughter#2-->42
+		Daughter#3-->28
+Total 268 --> Remaining 78 --> Father Distributes 26 to each Daughters
+		Daughter#1-->90
+		Daughter#2-->60
+		Daughter#3-->40
+Total 349 --> Remaining 102 --> Father Distributes 34 to each Daughters
+		Daughter#1-->117
+		Daughter#2-->78
+		Daughter#3-->52
+Total 430 --> Remaining 126 --> Father Distributes 42 to each Daughters
+		Daughter#1-->144
+		Daughter#2-->96
+		Daughter#3-->64
+Total 511 --> Remaining 150 --> Father Distributes 50 to each Daughters
+		Daughter#1-->171
+		Daughter#2-->114
+		Daughter#3-->76
+Total 592 --> Remaining 174 --> Father Distributes 58 to each Daughters
+		Daughter#1-->198
+		Daughter#2-->132
+		Daughter#3-->88
+Total 673 --> Remaining 198 --> Father Distributes 66 to each Daughters
+		Daughter#1-->225
+		Daughter#2-->150
+		Daughter#3-->100
+Total 754 --> Remaining 222 --> Father Distributes 74 to each Daughters
+		Daughter#1-->252
+		Daughter#2-->168
+		Daughter#3-->112
+
+Process finished with exit code 0

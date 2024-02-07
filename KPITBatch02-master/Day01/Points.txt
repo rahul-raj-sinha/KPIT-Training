@@ -1,0 +1,205 @@
+Python - 3.11.x
+------------------
+
+Flavours of python
+------------------
+1. Cpython -	currently using
+
+2. Jython - 	python - Java
+
+3. IronPython - Dotnet libraries
+
+
+Versions
+--------
+
+2.x VS 3.x
+----------
+syntax
+
+print "hello"
+
+print("hello")
+
+Python
+------
+Desktop App	-	Tkinter, Kivy, PyQt5,wxPython
+
+Web App	 - Flask, Django, Pyramid
+
+Mobile App - Kivy
+
+Testing - pytest, robot framework, selenium
+
+Automation - paramiko
+
+Data Science
+
+Data analytics 	- Numpy, Pandas, Matplotlib, Seaborn 
+		  Libraries to implement necessary 			  algorithms
+
+Data Engineering - Kafka, Zookeeper, Java, C, C++, ruby
+		   Spark, Hadoop
+
+ML - 
+	Deep Learning
+
+	NLP
+
+AI - 
+
+R programming
+
+Mathematics, Stats
+-------------------
+
+Python
+-------
+1. SDK - minimum libs to execute python code
+
+2. Shell - Interactive environment
+
+3. IDLE - Integrate Development Environment
+
+Python is a scripting tool?
+
+C or C++
+---------
+
+python is interpreted		compiled
+
+data types is dynamic		static
+
+Operators Overloaded
+--------------------
++ - addition and cocatenation
+
+* - multiplication and print a string n number of times
+
+from imp import reload
+
+--------------------------------------------------------
+
+primitive datatypes 
+-------------------
+1. Number
+   a. integer
+   b. float
+   c. complex
+
+2. strings
+3. boolean
+
+Coding Rules
+=============
+#! c:\python\bin
+
+print("Hello World")
+
+#!  = Shebang
+
+Comments
+--------
+#  -  is single line comment
+
+#this is a commment
+
+print("Hello World")      # this is a comment
+
+Strings
+-------
+strings are stored in " " or ' ' - single line string
+
+multi line string  """    """ or '''    '''
+
+"this is a string"
+
+multiple line comments
+----------------------
+"""  """
+or 
+'''   '''
+
+we dont use paranthesis in 
+1. if condition
+2. loops
+3. functions and classes
+
+we use indentation (a tab)
+
+Operators
+---------
+arithmetic
+comparison or relational
+logical
+Bitwise
+Ternary
+
+Bitwise
+--------
+Or operator
+-----------
+5  - 0101
+3  - 0011
+     ----
+     0111
+   -------
+
+5 << 1 -   01010
+8 << 1 -  10000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
