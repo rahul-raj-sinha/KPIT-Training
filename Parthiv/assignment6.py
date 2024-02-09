@@ -14,3 +14,10 @@ print(arr)
 
 print(srt.insertion_sort([1, 5, 4, 3, 2]))
 print(srt.quick_sort([1, 5, 4, 3, 2]))
+
+
+
+
+# # To take user Input
+# n=-int(input())
+# arr=[int(input()) fori in range(n)]
