@@ -168,3 +168,52 @@ import re
 # st = "the quick brown fox jumps over the lazy dog."
 # res = re.sub(r"fox", lambda word: word.upper(), st)
 # print(res)
+
+
+
+
+
+
+
+
+
+
+
+import re
+
+# 6. Validate an IPv4 address
+ipv4_address = input("Enter an IPv4 address: ")
+ipv4_pattern = r'^(\d{1,3}\.){3}\d{1,3}$'
+if re.match(ipv4_pattern, ipv4_address):
+    print("Valid IPv4 address.")
+else:
+    print("Invalid IPv4 address.")
+
+# 7. Extract all URLs from a given text
+text = input("Enter text containing URLs: ")
+url_pattern = r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+'
+urls_found = re.findall(url_pattern, text)
+print("URLs found:", urls_found)
+
+# 8. Validate an email address (more comprehensive validation)
+email = input("Enter an email address: ")
+email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+if re.match(email_pattern, email):
+    print("Valid email address.")
+else:
+    print("Invalid email address.")
+
+# 9. Extract all words containing consecutive vowels from a sentence
+sentence = input("Enter a sentence: ")
+vowel_pattern = r'\b\w*[aeiou]{2,}\w*\b'
+words_with_consecutive_vowels = re.findall(vowel_pattern, sentence)
+print("Words with consecutive vowels:", words_with_consecutive_vowels)
+
+# 10. Check if a string is a palindrome (ignoring spaces, punctuation, and case)
+string = input("Enter a string to check for palindrome: ")
+cleaned_string = re.sub(r'[^a-zA-Z]', '', string.lower())
+if cleaned_string == cleaned_string[::-1]:
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+
