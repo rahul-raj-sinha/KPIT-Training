@@ -217,3 +217,44 @@ if cleaned_string == cleaned_string[::-1]:
 else:
     print("The string is not a palindrome.")
 
+
+
+
+
+
+
+import re
+
+# 11. Extract all capitalized words from a sentence
+sentence = input("Enter a sentence: ")
+capitalized_words = re.findall(r'\b[A-Z][a-z]*\b', sentence)
+print("Capitalized words:", capitalized_words)
+
+# 12. Validate a MAC address (format: XX:XX:XX:XX:XX:XX)
+mac_address = input("Enter a MAC address: ")
+mac_pattern = r'^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$'
+if re.match(mac_pattern, mac_address):
+    print("Valid MAC address.")
+else:
+    print("Invalid MAC address.")
+
+# 13. Extract all words with numeric digits from a sentence
+sentence = input("Enter a sentence: ")
+words_with_digits = re.findall(r'\b\w*\d\w*\b', sentence)
+print("Words with digits:", words_with_digits)
+
+# 14. Validate a password (criteria: at least 8 characters, containing at least one uppercase letter, one lowercase letter, one digit, and one special character)
+password = input("Enter a password: ")
+password_pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'
+if re.match(password_pattern, password):
+    print("Valid password.")
+else:
+    print("Invalid password.")
+
+# 15. Extract all words with a specific length from a sentence
+sentence = input("Enter a sentence: ")
+word_length = int(input("Enter the word length to extract: "))
+words_with_length = re.findall(rf'\b\w{{{word_length}}}\b', sentence)
+print(f"Words with length {word_length}:", words_with_length)
+
+
