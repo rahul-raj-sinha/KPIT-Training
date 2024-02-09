@@ -1,0 +1,26 @@
+Pandas
+------
+
+ML and AI
+---------
+Hirearchial Indexing
+--------------------
+
+Pepsi
+	2 ltr
+	500 ML
+	300 ML can
+Coke
+	2 ltr
+	500 ML
+	300 ML can
+Thumbs up
+	2 ltr
+	500 ML
+	300 ML can
+
+
+Combining and Merging Datasets in Pandas
+-----------------------------------------
+
+
