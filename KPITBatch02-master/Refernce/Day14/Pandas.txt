@@ -1,0 +1,30 @@
+Pandas
+-------
+found by McKiney - 2008
+
+1. create a pandas object
+
+2. display the data
+
+3. cleanse the data
+
+4. how do we summarise
+
+5. Plot graphs - matplotlib and Seaborn
+
+Pandas Series
+-------------
+series is like a single column in a table
+
+
+
+
+
+
+
+
+
+
+
+
+

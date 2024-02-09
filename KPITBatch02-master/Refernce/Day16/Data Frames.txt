@@ -1,0 +1,40 @@
+Data Frames
+-----------
+
+loc - select the data by passing the labels, includes the last element of the range passed
+
+iloc - select the data by index numbers, does not include the last element of the range passed
+
+Functions
+---------
+1. reindex
+
+2. drop
+
+3. apply
+
+
+Sorting and Ranking
+-------------------
+
+
+
+Summary and Statistics
+----------------------
+
+
+
+Reading and Writing Data
+------------------------
+
+
+Missing Data
+------------
+
+
+Data Transformation
+-------------------
+
+
+
+

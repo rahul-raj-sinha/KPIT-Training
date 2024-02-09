@@ -1,0 +1,113 @@
+Linear Algebra
+--------------
+Linear algebra deals with mathematical concepts related to linear equations and their representation using matrices
+
+Numpy Linear Algebra Functions
+==============================
+1. dot()	- calculates the product of two arrays
+
+2. inner()	- calculates inner product of arrays
+
+3. outer()	- calculates outer product of arrays
+
+4. det()	- calculates the determinent of a matrix	
+
+5. solve()	- solves the linear matrix equation
+
+6. inv()	- calculates the multiplicative inverse of the matrix
+
+7. trace()	- calculates the sum of diagonal elememt
+
+
+[[2 4]
+ [6 8]]
+------------------------------------------------------------
+[[-1.    0.5 ]
+ [ 0.75 -0.25]]
+
+[2 4] ** -1 
+[6 8]
+
+1 / 2 * 8 - 6 * 4
+
+1 / -8 [8  -4]
+       [-6  2]
+
+8/-8	-4/-8
+-6/-8	2/ -8
+
+[-1	0.5]
+[0.75	-0.25]
+
+--------------------------------------------------------------
+1. inverse
+
+2. percentile
+
+----------------------------------------------------------------
+
+Numpy histogram 
+===============
+
+graphical representation of the distribution of numerical data.
+
+using functions like 
+	a. histogram()
+	b. plt()
+we can plot a histogram
+
+-----------------------------------------------------------------------
+
+interpolation
+--------------
+
+day = [2, 4, 7]
+
+petrol_prc =[100, 102, 103]
+
+-----------------------------------------------------------------------
+Error Handling in Numpy
+-----------------------
+
+Handle floating point error
+
+seterr() - set the way the floating point errors are handled
+
+it takes several parameters
+
+divide - specifies the behaviour of division by zero or infinity
+
+over - specifies the behaviour of floating point overflow
+
+under - specifies the behaviour of floating poin underflow
+
+invalid - specifies the behaviour of invalid floating point operations such as
+	  0 / 0, inf - inf and sqrt(-1)
+
+Data Visualization
+==================
+
+universal functions
+--------------------
+Trignometric functions - sin(), cos(), tan()....
+
+Arithematic functions - add(), subtract(), multiply()....
+
+Rounding functions - floor, ceil, round
+
+aggregation function - mean(), median, min(), max()....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
