@@ -1,0 +1,59 @@
+import tkinter as tk
+from tkinter import messagebox
+
+def save_data():
+    name = name_entry.get()
+    age = age_entry.get()
+    email = email_entry.get()
+
+    # Validate that all fields are filled
+    if not name or not age or not email:
+        messagebox.showerror("Error", "Please fill in all fields.")
+        return
+
+    # Format the data
+    data = f"Name: {name}\nAge: {age}\nEmail: {email}\n\n"
+
+    # Save the data to a text file
+    try:
+        with open("user_data.txt", "a") as file:
+            file.write(data)
+        messagebox.showinfo("Success", "Data saved successfully.")
+        clear_fields()
+    except Exception as e:
+        messagebox.showerror("Error", f"An error occurred: {str(e)}")
+
+def clear_fields():
+    name_entry.delete(0, tk.END)
+    age_entry.delete(0, tk.END)
+    email_entry.delete(0, tk.END)
+
+# Create the main window
+window = tk.Tk()
+window.title("User Data Form")
+
+# Name Entry
+tk.Label(window, text="Name:").grid(row=0, column=0, padx=10, pady=5)
+name_entry = tk.Entry(window)
+name_entry.grid(row=0, column=1, columnspan=2, pady=5)
+
+# Age Entry
+tk.Label(window, text="Age:").grid(row=1, column=0, padx=10, pady=5)
+age_entry = tk.Entry(window)
+age_entry.grid(row=1, column=1, columnspan=2, pady=5)
+
+# Email Entry
+tk.Label(window, text="Email:").grid(row=2, column=0, padx=10, pady=5)
+email_entry = tk.Entry(window)
+email_entry.grid(row=2, column=1, columnspan=2, pady=5)
+
+# Save Button
+save_button = tk.Button(window, text="Save", command=save_data)
+save_button.grid(row=3, column=0, columnspan=3, pady=10)
+
+# Clear Button
+clear_button = tk.Button(window, text="Clear", command=clear_fields)
+clear_button.grid(row=4, column=0, columnspan=3, pady=10)
+
+# Run the main loop
+window.mainloop()
